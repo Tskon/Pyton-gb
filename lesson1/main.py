@@ -1,6 +1,6 @@
 print('=== 1 task ===')
 num = int(input('input some number: '))
-print('Your number is', num)
+print('Your number +2 is', num + 2)
 
 print('=== 2 task ===')
 num = int(input('Please input correct number (0 < number < 10): '))
