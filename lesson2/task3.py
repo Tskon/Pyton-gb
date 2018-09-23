@@ -6,8 +6,8 @@ numList = [1, 15, 3, 1, 2, 12, 3]
 uniqNumList1 = list(set(numList))
 print('без дублей', uniqNumList1)
 
-# 2 вариант - только неповторяющиеся числа
 
+# 2 вариант - только неповторяющиеся числа
 doubles = numList[:]
 for num in set(numList):
   doubles.remove(num)
