@@ -13,6 +13,7 @@ def delDirs():
     dir = os.path.dirname(__file__) + '/dir_' + str(i)
     os.rmdir(dir)
 
-createDirs()
-delDirs()
+if __name__ == '__main__':
+  createDirs()
+  # delDirs()  # раскомментить для удаления каталогов
 
