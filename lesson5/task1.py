@@ -6,7 +6,8 @@ import os
 def createDirs():
   for i in range(1, 10):
     dir = os.path.dirname(__file__) + '/dir_' + str(i)
-    os.mkdir(dir)
+    if not os.path.exists(dir):
+      os.mkdir(dir)
 
 def delDirs():
   for i in range(1, 10):
