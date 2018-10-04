@@ -4,7 +4,11 @@
 import random
 
 def randEl(list):
-  return random.choice(list)
+  if len(list):
+    return random.choice(list)
+  else:
+    return None
 
 if __name__ == '__main__':
   print(randEl([1, 'ads', 3]))
+  print(randEl([]))
