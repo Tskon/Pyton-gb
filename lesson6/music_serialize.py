@@ -2,9 +2,9 @@ import json
 import pickle
 
 group = {
-  'name': 'Oomph',
-  'tracks': ['Augen auf!','Supernova'],
-  'albums': [{'name': 'Ego', 'year': 2001},{'name': 'Wahrheit oder Pflicht', 'year': 2004}]
+  'название': 'Oomph',
+  'треки': ['Augen auf!','Supernova'],
+  'альбомы': [{'название': 'Ego', 'год': 2001},{'название': 'Wahrheit oder Pflicht', 'год': 2004}]
 }
 
 groupBytes = pickle.dumps(group)
