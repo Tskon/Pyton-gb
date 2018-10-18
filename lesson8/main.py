@@ -1,5 +1,6 @@
 import sys
 from core import *
+import game
 
 try:
   command = sys.argv[1]
@@ -15,8 +16,11 @@ try:
     delete_file(sys.argv[2])
   elif command == 'copy':
     copy_file(sys.argv[2], sys.argv[3])
+  elif command == 'game':
+    game.startGame()
   elif command == 'help':
-    print("create_file name - создать файл\ncreate_folder name - создать папку\ndelete name - удалить файл/папку\nlist True\False - список файлов/папок\ncopy name newName - копировать файл/папку")
+    print(
+      "create_file name - создать файл\ncreate_folder name - создать папку\ndelete name - удалить файл/папку\nlist True\False - список файлов/папок\ncopy name newName - копировать файл/папку")
 except Exception as e:
   print("Что-то пошло не так: {}".format(e))
 
